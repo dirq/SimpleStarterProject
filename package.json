@@ -1,0 +1,19 @@
+{
+  "name": "DOW.Intrepid",
+  "description": "Dec 2016",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.0.1",
+    "del": "^2.2.2",
+    "gulp": "^3.8.11",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "normalize-css": "^2.3.1"
+  }
+}
