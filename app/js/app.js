@@ -1,6 +1,3 @@
-/**
- * Created by dwatkins on 2/18/15.
- */
 /*global jQuery:false, ga:false, $:false, Modernizr:false, TimelineMax:false, TweenLite:false */
 var app = (function ($, Modernizr, TimelineMax, TweenLite, undefined) {
     'use strict';
