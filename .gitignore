@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/visualstudio,visualstudiocode,windows,macos,phpstorm,jetbrains,bower,svn,archives,node,sass,wordpress
+# Created by https://www.gitignore.io/api/visualstudio,visualstudiocode,windows,macos,phpstorm,jetbrains,bower,svn,archives,node,sass
 
 ### Archives ###
 # It's better to unpack these files and commit the raw source because
@@ -43,7 +42,6 @@ bower_components
 # User-specific stuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
-.idea/dictionaries
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
@@ -75,9 +73,6 @@ bower_components
 # JIRA plugin
 atlassian-ide-plugin.xml
 
-# Cursive Clojure plugin
-.idea/replstate.xml
-
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
@@ -91,9 +86,6 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
-
-# Sonarlint plugin
-.idea/sonarlint
 
 ### macOS ###
 *.DS_Store
@@ -205,8 +197,6 @@ typings/
 
 # JIRA plugin
 
-# Cursive Clojure plugin
-
 # Crashlytics plugin (for Android Studio and IntelliJ)
 
 ### PhpStorm Patch ###
@@ -216,8 +206,6 @@ typings/
 # modules.xml
 # .idea/misc.xml
 # *.ipr
-
-# Sonarlint plugin
 
 ### Sass ###
 .sass-cache/
@@ -249,25 +237,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-### WordPress ###
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
-
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
-
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -489,7 +458,6 @@ UpgradeLog*.htm
 # SQL Server files
 *.mdf
 *.ldf
-*.ndf
 
 # Business Intelligence projects
 *.rdl.data
@@ -546,20 +514,6 @@ __pycache__/
 # tools/**
 # !tools/packages.config
 
-# Telerik's JustMock configuration file
-*.jmconfig
-
-# BizTalk build output
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
-
-# End of https://www.gitignore.io/api/visualstudio,visualstudiocode,windows,macos,phpstorm,jetbrains,bower,svn,archives,node,sass,wordpress
-
+# End of https://www.gitignore.io/api/visualstudio,visualstudiocode,windows,macos,phpstorm,jetbrains,bower,svn,archives,node,sass
 revision.txt
 WorkingFiles/
-*.psd
-*.tif
-/site/wp-content/uploads/2014/10/*.tif
-/site/wp-content/uploads/2014/10/*.tiff

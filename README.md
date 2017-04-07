@@ -1,2 +1,2 @@
 ## Overview
-Prototype for the *My Zoetis Rewards* Order Planner.
+A nice, clean starter for a knockout application
