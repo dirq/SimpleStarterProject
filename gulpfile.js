@@ -21,16 +21,15 @@
 'use strict';
 
 // Load plugins
-var gulp = require('gulp'),
-	concat = require('gulp-concat'),
+var browserSync = require('browser-sync').create(),
+	del = require('del'),
+    gulp = require('gulp'),
+	minifycss = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
+	inline = require('gulp-inline-source'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
-	minifycss = require('gulp-clean-css'),
 	uglify = require('gulp-uglify'),
-	rename = require('gulp-rename'),
-	browserSync = require('browser-sync').create(),
-	del = require('del'),
-	inline = require('gulp-inline-source'),
 	path = require('path');
 
 // Styles
@@ -52,11 +51,11 @@ gulp.task('styles', function () {
 
 // App Scripts
 gulp.task('scripts', function (cb) {
-	return gulp.src('app/js/**/*.js')
+	return gulp.src(['app/js/**/*.js', '!app/js/lib/**/*', '!*min*', '!**/min/**/*'])
 		//.pipe(concat('lib/common.js', 'app.js'))
-        .pipe(rename('app.min.js'))
+        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('app/js'));
+        .pipe(gulp.dest('app/js/min/'));
 });
 
 
@@ -112,6 +111,8 @@ gulp.task('serve', ['styles', 'scripts', 'watch'], function ()
 	gulp.watch('app/**/*.{html|scss|js|png|gif|jpg|jpeg}', browserSync.reload);
 });
 
+
+
 // Build and serve the output from the dist build
 gulp.task('serve:dist', ['buildForDeployment'], function ()
 {
@@ -122,3 +123,5 @@ gulp.task('serve:dist', ['buildForDeployment'], function ()
         }
     });
 });
+
+gulp.task('default', ['serve'], function () { });

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="">
 <head>
     <meta charset="utf-8">
@@ -24,11 +24,16 @@
   
 </footer>
 
-<!-- JS CDNs -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  
-<script src="js/lib/common.js" inline></script>
-<script src="js/app.js" inline></script>
+<!-- JS CDNs with backups -->
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script>(window.jQuery) || document.write('<script src="/js/lib/jquery.min.js"><\/script>');</script> 
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js" integrity="sha256-owX7sroiO/O1a7h3a4X29A1g3QgqdNvijRQ7V5TH45M=" crossorigin="anonymous"></script>
+<script>(window.ko) || document.write('<script src="/js/lib/knockout.js"><\/script>');</script> 
+
+<script src="js/analytics.js"></script>
+<script src="js/polyfills.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
